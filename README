@@ -3,24 +3,25 @@ gtkatlantic
 GtkAtlantic is a GTK+ network client that works with the monopd server.
 
 Runtime requirements:
-  cygwin-1.5.25-11
-  glib2-2.14.6-1
-  gtk2-x11-2.12.9-1
-  libpng12-1.2.26-1
-  libxml2-2.6.30-1
+  cygwin-1.7.0-45
+  libgcc1-4.3.2-2
+  libglib2.0_0-2.20.1-1
+  libgtk2.0_0-2.16.1-1
+  libpng12-1.2.35-1
+  libxml2-2.7.3-10
 
 Build requirements:
 (besides corresponding -devel packages)
-  autoconf2.5-2.61-1
-  automake1.9-1.9.6-2
-  binutils-20060817-1
-  cygport-0.3.10-1
-  gawk-3.1.6-1
-  gcc-core-3.4.4-3
-  gnome-common-2.20.0-1
-  libtool-2.2.2-2
-  make-3.81-1
-  pkg-config-0.21-1
+  autoconf2.5-2.63-10
+  automake1.9-1.9.6-10
+  binutils-20080624-2
+  cygport-0.9.6-1
+  gawk-3.1.6-2
+  gcc4-core-4.3.2-2
+  gnome-common-2.26.0-1
+  libtool-2.2.7a-12
+  make-3.81-2
+  pkg-config-0.23b-10
   sed-4.1.5-2
 
 Canonical website:
@@ -47,12 +48,13 @@ This will create:
 Files included in the binary package:
 
   /usr/bin/gtkatlantic.exe
-  /usr/share/doc/gtkatlantic-0.4.2/AUTHORS
-  /usr/share/doc/gtkatlantic-0.4.2/COPYING
-  /usr/share/doc/gtkatlantic-0.4.2/ChangeLog
-  /usr/share/doc/gtkatlantic-0.4.2/INSTALL
-  /usr/share/doc/gtkatlantic-0.4.2/NEWS
-  /usr/share/doc/gtkatlantic-0.4.2/README
+  /usr/share/applications/gtkatlantic.desktop
+  /usr/share/doc/Cygwin/gtkatlantic.README
+  /usr/share/doc/gtkatlantic/AUTHORS
+  /usr/share/doc/gtkatlantic/COPYING
+  /usr/share/doc/gtkatlantic/ChangeLog
+  /usr/share/doc/gtkatlantic/NEWS
+  /usr/share/doc/gtkatlantic/README
   /usr/share/gtkatlantic/board.png
   /usr/share/gtkatlantic/cards.png
   /usr/share/gtkatlantic/commands.png
@@ -65,14 +67,25 @@ Files included in the binary package:
   /usr/share/gtkatlantic/logo.png
   /usr/share/gtkatlantic/stars.png
   /usr/share/gtkatlantic/stars_m.png
+  /usr/share/gtkatlantic/themes/generic_gradient/cards.png
+  /usr/share/gtkatlantic/themes/generic_gradient/estates.png
+  /usr/share/gtkatlantic/themes/generic_gradient/houses.png
+  /usr/share/gtkatlantic/themes/generic_gradient/pattern.png
+  /usr/share/gtkatlantic/themes/generic_gradient/preview.png
+  /usr/share/gtkatlantic/themes/generic_gradient/stars.png
+  /usr/share/gtkatlantic/themes/generic_gradient/stars_m.png
+  /usr/share/gtkatlantic/themes/generic_gradient/theme.conf
+  /usr/share/gtkatlantic/themes/generic_gradient/tokens.png
   /usr/share/gtkatlantic/tokens.png
+  /usr/share/icons/hicolor/16x16/apps/gtkatlantic.xpm
+  /usr/share/icons/hicolor/32x32/apps/gtkatlantic.xpm
 
 ------------------
 
 Port Notes:
 
------ version 0.4.2-1 -----
-Initial release for Cygwin.
+----- version 0.4.2-10 -----
+Initial release for Cygwin 1.7.
 
 
 Cygwin port maintained by:

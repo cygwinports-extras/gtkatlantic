@@ -1,7 +1,0 @@
-inherit gnome2
-
-DESCRIPTION="GTK+ monopd client"
-HOMEPAGE="http://gtkatlantic.gradator.net/"
-SRC_URI="http://download.tuxfamily.org/${PN}/downloads/v${PV_MAJ_MIN}/${P}.tar.bz2"
-
-CYGCONF_ARGS="--datadir=/usr/share"

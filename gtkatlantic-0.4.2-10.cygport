@@ -1,0 +1,21 @@
+inherit gnome2
+
+DESCRIPTION="GTK+ monopd client"
+HOMEPAGE="http://gtkatlantic.gradator.net/"
+SRC_URI="http://download.tuxfamily.org/${PN}/downloads/v${PV_MAJ_MIN}/${P}.tar.bz2"
+PATCH_URI="0.4.2-vpath.patch"
+
+CYGCONF_ARGS="--datadir=/usr/share"
+
+src_install() {
+	cd ${B}
+	cyginstall
+
+	for i in 16x16 32x32
+	do
+		insinto /usr/share/icons/hicolor/${i}/apps
+		newins ${S}/data/icon${i}.xpm ${PN}.xpm
+	done
+
+	make_desktop_entry ${PN} Atlantic ${PN} "Game;BoardGame"
+}

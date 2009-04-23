@@ -1,4 +1,4 @@
 category: Games Gnome
-requires: cygwin glib2 gtk2-x11 libpng12 libxml2
+requires: cygwin libgcc1 libglib2.0_0 libgtk2.0_0 libpng12 libxml2
 sdesc: "GTK+ monopd client"
 ldesc: "GtkAtlantic is a GTK+ network client that works with the monopd server."
