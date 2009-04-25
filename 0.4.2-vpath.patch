@@ -1,0 +1,22 @@
+--- origsrc/gtkatlantic-0.4.2/Makefile.am	2003-12-24 14:34:48.000000000 -0600
++++ src/gtkatlantic-0.4.2/Makefile.am	2009-04-22 22:42:01.233750000 -0500
+@@ -12,16 +12,16 @@ install-data-local:
+ 	fi
+ 	if test -d $(srcdir)/themes; then \
+ 	   $(mkinstalldirs) $(DESTDIR)$(pkgdatadir)/themes; \
+-	   for themedir in $(srcdir)/themes/*; do \
++	   (cd $(srcdir); for themedir in themes/*; do \
+               if test -d $$themedir; then \
+ 	         $(mkinstalldirs) $(DESTDIR)$(pkgdatadir)/$$themedir; \
+-	         for themefile in $(srcdir)/$$themedir/*; do \
++	         for themefile in $$themedir/*; do \
+ 	            if test -f $$themefile; then \
+ 	               $(INSTALL_DATA) $$themefile $(DESTDIR)$(pkgdatadir)/$$themedir; \
+ 	            fi \
+ 	         done \
+ 	      fi \
+-	   done \
++	   done) \
+ 	fi
+ 
+ 
