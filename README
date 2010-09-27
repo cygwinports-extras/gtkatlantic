@@ -3,26 +3,25 @@ gtkatlantic
 GtkAtlantic is a GTK+ network client that works with the monopd server.
 
 Runtime requirements:
-  cygwin-1.7.0-45
-  libgcc1-4.3.2-2
-  libglib2.0_0-2.20.1-1
-  libgtk2.0_0-2.16.1-1
-  libpng12-1.2.35-1
-  libxml2-2.7.3-10
+  cygwin-1.7.7-1
+  libglib2.0_0-2.24.1-1
+  libgtk2.0_0-2.20.1-1
+  libpng14-1.4.3-2
+  libxml2-2.7.7-1
 
 Build requirements:
 (besides corresponding -devel packages)
-  autoconf2.5-2.63-10
-  automake1.9-1.9.6-10
-  binutils-20080624-2
-  cygport-0.9.6-1
-  gawk-3.1.6-2
-  gcc4-core-4.3.2-2
-  gnome-common-2.26.0-1
-  libtool-2.2.7a-12
+  autoconf2.5-2.65-1
+  automake1.11-1.11.1-1
+  binutils-2.20.51-2
+  cygport-0.10.0-1
+  gawk-3.1.7-1
+  gcc4-core-4.5.0-1
+  gnome-common-2.28.0-2
+  libtool-2.2.7a-15
   make-3.81-2
   pkg-config-0.23b-10
-  sed-4.1.5-2
+  sed-4.2.1-1
 
 Canonical website:
   http://gtkatlantic.gradator.net/
@@ -33,56 +32,22 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack gtkatlantic-0.4.2-X-src.tar.bz2
+  unpack gtkatlantic-0.4.3-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./gtkatlantic-0.4.2-X.cygport all
+  cygport ./gtkatlantic-0.4.3-X.cygport all
 
 This will create:
-  /usr/src/gtkatlantic-0.4.2-X-src.tar.bz2
-  /usr/src/gtkatlantic-0.4.2-X.tar.bz2
+  /usr/src/gtkatlantic-0.4.3-X-src.tar.bz2
+  /usr/src/gtkatlantic-0.4.3-X.tar.bz2
 
 -------------------------------------------
 
-Files included in the binary package:
-
-  /usr/bin/gtkatlantic.exe
-  /usr/share/applications/gtkatlantic.desktop
-  /usr/share/doc/Cygwin/gtkatlantic.README
-  /usr/share/doc/gtkatlantic/AUTHORS
-  /usr/share/doc/gtkatlantic/COPYING
-  /usr/share/doc/gtkatlantic/ChangeLog
-  /usr/share/doc/gtkatlantic/NEWS
-  /usr/share/doc/gtkatlantic/README
-  /usr/share/gtkatlantic/board.png
-  /usr/share/gtkatlantic/cards.png
-  /usr/share/gtkatlantic/commands.png
-  /usr/share/gtkatlantic/default.conf
-  /usr/share/gtkatlantic/help.index
-  /usr/share/gtkatlantic/houses.png
-  /usr/share/gtkatlantic/icon16x16.xpm
-  /usr/share/gtkatlantic/icon32x32.xpm
-  /usr/share/gtkatlantic/interface.xml
-  /usr/share/gtkatlantic/logo.png
-  /usr/share/gtkatlantic/stars.png
-  /usr/share/gtkatlantic/stars_m.png
-  /usr/share/gtkatlantic/themes/generic_gradient/cards.png
-  /usr/share/gtkatlantic/themes/generic_gradient/estates.png
-  /usr/share/gtkatlantic/themes/generic_gradient/houses.png
-  /usr/share/gtkatlantic/themes/generic_gradient/pattern.png
-  /usr/share/gtkatlantic/themes/generic_gradient/preview.png
-  /usr/share/gtkatlantic/themes/generic_gradient/stars.png
-  /usr/share/gtkatlantic/themes/generic_gradient/stars_m.png
-  /usr/share/gtkatlantic/themes/generic_gradient/theme.conf
-  /usr/share/gtkatlantic/themes/generic_gradient/tokens.png
-  /usr/share/gtkatlantic/tokens.png
-  /usr/share/icons/hicolor/16x16/apps/gtkatlantic.xpm
-  /usr/share/icons/hicolor/32x32/apps/gtkatlantic.xpm
-
-------------------
-
 Port Notes:
+
+----- version 0.4.3-1 -----
+Version bump.
 
 ----- version 0.4.2-10 -----
 Initial release for Cygwin 1.7.
