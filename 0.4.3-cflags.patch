@@ -1,0 +1,13 @@
+--- origsrc/gtkatlantic-0.4.3/configure.in	2010-04-17 21:18:24.000000000 -0500
++++ src/gtkatlantic-0.4.3/configure.in	2012-10-28 11:59:12.738059500 -0500
+@@ -67,10 +67,6 @@ AC_DEFINE_UNQUOTED(PACKAGE_SOURCE_DIR, "
+ #       CFLAGS="-g";  \ 
+ # fi
+ 
+-if test "x$GCC" = "xyes"; then  \
+-      CFLAGS="-Wall -Werror -ggdb";  \ 
+-fi
+-
+ AC_OUTPUT([
+ Makefile
+ src/Makefile

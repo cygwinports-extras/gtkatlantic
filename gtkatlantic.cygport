@@ -1,9 +1,14 @@
 inherit gnome2
 
-DESCRIPTION="GTK+ monopd client"
+NAME="gtkatlantic"
+VERSION=0.4.3
+RELEASE=2
+CATEGORY="Games"
+SUMMARY="GTK+ monopd client"
+DESCRIPTION="GtkAtlantic is a GTK+ network client that works with the monopd server."
 HOMEPAGE="http://gtkatlantic.gradator.net/"
 SRC_URI="http://download.tuxfamily.org/${PN}/downloads/v${PV_MAJ_MIN}/${P}.tar.bz2"
-PATCH_URI="0.4.2-vpath.patch"
+PATCH_URI="0.4.2-vpath.patch  0.4.3-cflags.patch"
 
 CYGCONF_ARGS="--datadir=/usr/share"
 
