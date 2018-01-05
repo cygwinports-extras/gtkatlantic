@@ -1,27 +1,13 @@
 inherit gnome2
 
 NAME="gtkatlantic"
-VERSION=0.5.0
+VERSION=0.6.1
 RELEASE=1
 CATEGORY="Games"
 SUMMARY="GTK+ monopd client"
 DESCRIPTION="GtkAtlantic is a GTK+ network client that works with the monopd server."
-REQUIRES="monopd"
 HOMEPAGE="http://gtkatlantic.gradator.net/"
-SRC_URI="http://download.tuxfamily.org/${PN}/downloads/v${VERSION%.*}/${NAME}-${VERSION}.tar.bz2"
-PATCH_URI="0.4.2-vpath.patch"
+SRC_URI="http://download.tuxfamily.org/gtkatlantic/downloads/v${VERSION%.*}/${NAME}-${VERSION}.tar.bz2"
 
-#CYGCONF_ARGS="--datadir=/usr/share"
-
-src_install() {
-	cd ${B}
-	cyginstall
-
-	for i in 16x16 32x32
-	do
-		insinto /usr/share/icons/hicolor/${i}/apps
-		newins ${S}/data/icon${i}.xpm ${PN}.xpm
-	done
-
-	make_desktop_entry ${PN} Atlantic ${PN} "Game;BoardGame"
-}
+# a remote server could also be used
+#REQUIRES="monopd"
